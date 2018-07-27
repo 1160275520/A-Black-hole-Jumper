@@ -1,0 +1,111 @@
+/* style for mobile navbar */
+#navbarNav, #center
+{
+  text-align:center;
+}
+
+#navtitle
+{
+  font-family: proxima-nova;
+  color: white;
+}
+
+
+/* style for about page */
+
+.slide
+{
+  width: 80%;
+  margin: auto;
+  margin-bottom: 5%;
+}
+
+.aboutme
+{
+  width: 80%;
+  margin: 5% auto;
+  font-family: 'Lato', sans-serif;
+  text-transform: none;
+}
+
+/* style for project page */
+
+.project
+{
+  text-align:center;
+}
+
+.projectpic
+{
+  width: 80%;
+  margin: 5%; 
+}
+
+.projectdesc
+{
+  color: black
+}
+
+.projectdetail
+{
+  font-family: 'Lato', sans-serif;
+  text-transform: none;
+}
+
+
+/* style for video page */
+
+.videowrapper {
+    position: relative;
+    padding-bottom: 56.25%;
+}
+
+.videowrapper iframe{
+    position: absolute;
+    height: 80%;
+    width: 80%;
+    margin-top: 7%;
+    margin-left: 10%;
+}
+
+.videodesc{
+    font-family: 'Lato', sans-serif;
+    text-transform: none;
+    width: 80%;
+    margin-left: 10%;
+}
+
+
+/* create grid to display pictures */
+      
+main{
+         width: 90%;
+         margin:5% auto;         
+         column-width: 220px;         
+         column-count: 2;                  
+}
+      
+a[title] figure img{
+         width: 100%;
+         height: auto;
+}
+
+      
+main a[title]{
+    display: inline-block;        
+    transition: all .3s cubic-bezier(0.25, .8, .25, 1);
+}
+      
+main:hover a[title]:not(:hover){
+         opacity: .7;
+}
+
+#mountain{
+   background: url("https://s3.amazonaws.com/backgroundpicture/fullsizeoutput_2b8-7.jpg") no-repeat center center fixed;
+   background-size: cover;
+}
+
+form {
+    margin-top: 60px;
+    text-align: center;  
+}

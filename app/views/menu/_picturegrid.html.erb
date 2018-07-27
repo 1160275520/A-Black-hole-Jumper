@@ -1,0 +1,17 @@
+<%= render "layouts/mobileheader" %>
+<div class="row">
+   <div class="col-lg-2">
+      <%= render "layouts/header" %>
+   </div>
+   <div class="col-lg-10">
+   <main>
+      <%@pictures.each do |picture| %>
+         <a preload="preload" href="/pictures/<%= picture.id %>" title="picture">
+           <figure>
+             <img src="<%= picture.url%>">
+           </figure>
+         </a>
+      <% end %>      
+   </main>
+</div>
+</div>

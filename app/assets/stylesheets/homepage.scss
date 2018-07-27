@@ -1,0 +1,130 @@
+@font-face
+{font-family:proxima-nova;src:url(https://use.typekit.net/af/2e3ccc/00000000000000003b9b0939/27/l?subset_id=2&fvd=n6&v=3) format("woff2"),url(https://use.typekit.net/af/2e3ccc/00000000000000003b9b0939/27/d?subset_id=2&fvd=n6&v=3) format("woff"),url(https://use.typekit.net/af/2e3ccc/00000000000000003b9b0939/27/a?subset_id=2&fvd=n6&v=3) format("opentype");font-weight:600;font-style:normal;}
+
+/* style for homepage */
+
+.homepage
+{
+  background: url("https://s3-us-west-1.amazonaws.com/capetownpicture/homepagepicture.jpg") no-repeat center center fixed;
+  background-size: cover;
+}
+
+.homemenu
+{
+  margin-top:5%;
+  margin-left:5%;
+}
+
+.topMenu
+{
+  font-family: proxima-nova;
+  color: white;
+  text-transform: none;
+}
+
+
+.bottomMenu
+{
+  font-family: proxima-nova;
+  color: white;
+  text-transform: none;
+  margin-top: 38%;
+}
+
+.middleMenu
+{
+  margin-left: -25%;
+  margin-top: 2%;
+}
+
+button
+{
+  cursor:pointer;
+}
+
+@media only screen and (max-width: 420px)
+{
+
+  .homemenu 
+  {
+    margin-top: 20%;
+    margin-left: 10%;
+  }
+
+  .middleMenu 
+  {
+    margin-top: 10%;
+  }
+
+  .bottomMenu 
+  {
+    margin-top: 140%;
+  }
+
+}
+
+/* style for button */
+
+
+.typ-subhed {
+  font-family: proxima-nova;
+  line-height: 30px;
+  letter-spacing: 0;
+}
+
+.ctrl-standard.fx-sliderIn {
+  color: white;
+  border-color: white;
+}
+.ctrl-standard.fx-sliderIn::after {
+  background: white;
+}
+
+[class*="ctrl-"] {
+  padding: 5Px 15px;
+  border-radius: 5px;
+  border: 2px solid #231f20;
+}
+[class*="ctrl-"][class*="fx-"]:hover,
+[class*="ctrl-"][class*="fx-"].active {
+  color: #231f20;
+}
+
+  [class*="fx-"],
+[class*="fx-"]:hover {
+    transition: color 0.5s  ease-in-out;
+  }
+  [class*="fx-"]:not(.fx-dyna) {
+    position: relative;
+    z-index: 1;
+    transition-delay: 0.2s !important;
+    overflow: hidden;
+    margin-left: 20%;
+    background-color: transparent;
+  }
+  [class*="fx-"]:not(.fx-dyna)::after,
+[class*="fx-"]:not(.fx-dyna)::before {
+    content: "";
+    display: block;
+    position: absolute;
+    z-index: -1;
+  }
+
+  .fx-sliderIn::after {
+    transition: width 0.5s ease-in-out;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 0;
+  }
+  .fx-sliderIn:hover::after,
+.fx-sliderIn.active::after {
+    transition: width 0.5s ease-in-out;
+    width: 100%;
+  }
+  :checked + .fx-sliderIn::after,
+.fx-sliderIn.active::after {
+    width: 300%;
+  }
+

@@ -1,0 +1,52 @@
+<header>
+      <div class="container" id="navbar">
+        <img class="logo" src="https://s3.amazonaws.com/backgroundpicture/3.png" width="70%">
+        <div class="topBotomBordersOut">
+          <ul>
+            <li>
+              <%= link_to("Home", "/") %>
+            </li>
+            <li>
+              <a data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+                Photo
+              </a>
+              <div class="collapse" id="collapseExample">
+                  <div id="bluebar";>
+                    <ul>
+                      <li>
+                        <a class="photomenu" href="/capetown">Capetown</a>
+                      </li>
+                      <li>
+                        <a href="/nepal">Nepal</a>
+                      </li>
+                      <li>
+                        <a href="/snowmountain">Snow Mountain</a>
+                      </li>
+                      <li>
+                        <a href="/apuausangate">Apu Ausangate</a>
+                      </li>
+                      <li>
+                        <a href="/machupicchu">Machu Picchu</a>
+                      </li>
+                    </ul>
+                </div>
+              </div>
+            </li>
+            <li>
+              <a href="/video">Video</a>
+            </li>
+            <li>
+              <a href="/project">Project</a>
+            </li>
+            <li>
+              <a href="/about">About</a>
+            </li>
+          </ul>
+        </div>
+        <div class="svg_list">
+            <%= show_svg("instagram2.svg") %>
+            <%= show_svg("github2.svg") %>
+            <%= show_svg("linkedin2.svg") %>
+        </div>
+      </div>
+</header>
