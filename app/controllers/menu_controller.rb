@@ -1,15 +1,15 @@
 class MenuController < ApplicationController
 
    def capetown
-      @pictures = Picture.where(category: 'capetownpicture')
+      @pictures = Picture.where(category: 'capetownpictures')
    end
 
    def nepal
       @pictures = Picture.where(category: 'nepalpictures')
    end
 
-   def snowmountain
-      @pictures = Picture.where(category: 'mountainsnowpictures')
+   def peru
+      @pictures = Picture.where(category: 'perupictures')
    end
 
    def apuausangate
@@ -18,6 +18,14 @@ class MenuController < ApplicationController
 
    def machupicchu
       @pictures = Picture.where(category: 'machupicchupictures')
+   end
+
+   def bolivia
+      @pictures = Picture.where(category: 'boliviapictures')
+   end
+
+   def southafrica
+      @pictures = Picture.where(category: 'southafricapictures')
    end
 
    def video

@@ -5,8 +5,8 @@
    </div>
    <div class="col-lg-10">
    <main>
-      <%@pictures.each do |picture| %>
-         <a preload="preload" href="/pictures/<%= picture.id %>" title="picture">
+      <% @pictures.each do |picture| %>
+         <a href="/pictures/<%= picture.id %>" title="picture">
            <figure>
              <img src="<%= picture.url%>">
            </figure>
