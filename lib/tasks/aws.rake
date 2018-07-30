@@ -2,10 +2,10 @@ namespace :aws do
   desc "TODO"
   task get_pictures: :environment do
    get_picture_array_from_bucket('capetownpictures')
-   get_picture_array_from_bucket('nepalpictures')
-   get_picture_array_from_bucket('boliviapictures')
-   get_picture_array_from_bucket('perupictures')
    get_picture_array_from_bucket('southafricapictures')
+   get_picture_array_from_bucket('nepalpictures')
+   get_picture_array_from_bucket('perupictures')
+   get_picture_array_from_bucket('boliviapictures')
    get_picture_array_from_bucket('apuausangate')
    get_picture_array_from_bucket('machupicchupictures')
    puts "I got the pictures"
