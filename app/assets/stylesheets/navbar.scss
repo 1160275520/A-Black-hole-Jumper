@@ -1,10 +1,7 @@
-@font-face
-{font-family:proxima-nova;src:url(https://use.typekit.net/af/2e3ccc/00000000000000003b9b0939/27/l?subset_id=2&fvd=n6&v=3) format("woff2"),url(https://use.typekit.net/af/2e3ccc/00000000000000003b9b0939/27/d?subset_id=2&fvd=n6&v=3) format("woff"),url(https://use.typekit.net/af/2e3ccc/00000000000000003b9b0939/27/a?subset_id=2&fvd=n6&v=3) format("opentype");font-weight:600;font-style:normal;}
-
-
 div.container
 {
-    font-family: proxima-nova;
+    font-family: 'Lato', sans-serif;
+    font-weight: bold;
     text-align: center;
     position: fixed;
     width: 20%;
